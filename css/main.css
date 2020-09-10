@@ -23,6 +23,24 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+.btn {
+  border: 2px solid purple;
+  background: none;
+  padding: 0.3rem 0.5rem;
+  color: aliceblue;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.btn-md {
+  border: 2px solid purple;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  color: aliceblue;
+  font-size: 1rem;
+  cursor: pointer;
+}
 /*Top bar */
 
 .top-bar {
@@ -54,6 +72,9 @@ ul {
 
 /* Header */
 header {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   background: url("../images/background.jpg") no-repeat;
@@ -62,7 +83,7 @@ header {
 
 .navigation {
   width: 100%;
-  max-height: 100px;
+  max-height: 150px;
   background: rgba(0, 0, 0, 0.5);
   padding: 0 4.5rem;
   border-bottom: solid 2px purple;
@@ -87,17 +108,63 @@ ul li {
   line-height: 50px;
 }
 
-header ul li .btn {
-  border: 2px solid purple;
-  background: none;
-  padding: 0.3rem 0.5rem;
-  color: aliceblue;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-
 header ul li .btn:hover {
   border: 1px solid white;
   color: #ffffff;
   border-radius: 0.2rem;
+}
+
+/* Showcase*/
+header .showcase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+  color: #ffffff;
+}
+
+header .showcase .showcase-first {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1rem;
+}
+
+header .showcase .showcase-first .showcase-left {
+  font-size: 2rem;
+  text-align: right;
+}
+
+header .showcase .showcase-first .showcase-left h1 {
+  padding-right: 1.5rem;
+  color: rgb(175, 56, 175);
+}
+
+header .showcase .showcase-first .showcase-right {
+  border-left: solid white 2px;
+}
+
+header .showcase .showcase-first .showcase-right li {
+  text-align: left;
+  line-height: 25px;
+  display: block;
+  padding-left: 1rem;
+  text-transform: uppercase;
+}
+
+header .showcase .showcase-second h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+header .showcase .showcase-second p {
+  margin-bottom: 1rem;
+}
+header .showcase .showcase-second p span {
+  color: rgb(175, 56, 175);
+}
+
+header .showcase .showcase-second .showcase-btn {
+  border: solid 1px white;
 }
