@@ -64,9 +64,68 @@
   font-size: 2rem;
 }
 
-.contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5rem;
-    margin: 3rem 0;
+/* CONTACT */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  margin: 3rem 0;
 }
+.contact small {
+  font-size: 0.7rem;
+}
+.separator-1 {
+  margin-top: 0.6rem;
+  width: 20%;
+  color: purple;
+}
+
+.separator-2 {
+  margin-top: 2rem;
+  color: purple;
+}
+
+.text-group-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px #7e7d7d solid;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.2rem;
+}
+
+.btn-contact{
+  border: none;
+  color: #ffffff;
+  background: purple;
+  padding: 0.4rem 1.3rem;
+}
+
+.icon-control{
+  margin-top: 1rem;
+  size: 2rem;
+  font-size: 1.5rem;
+  color: gray;
+  margin-right: 1rem;
+}
+
+.icon-control-1{
+  font-size: 1rem;
+  color: gray;
+  margin-right: 1rem;
+}
+
+.icon-control:hover{
+  color: purple;
+  cursor: pointer;
+}
+
