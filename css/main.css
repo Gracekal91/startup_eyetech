@@ -232,30 +232,35 @@ header .showcase .showcase-second .showcase-btn {
   grid-template-columns: 1fr 1fr;
   text-align: left;
   color: aliceblue;
-  z-index: 2;
+  z-index: 100;
 }
 
 .features-left {
   background: url("../images/background.jpg");
   background-size: cover;
-  padding: 4rem 1rem;
+  padding: 4rem 0.3rem;
   min-height: 450px;
   position: relative;
+  z-index: 100;
 }
 
+.features-left>*{
+  position: relative;
+  z-index: 100;
+  
+}
+
+
 .features-left::after {
-  content: "";
+  content: ""; 
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(8, 8, 22, 0.9);
   width: 100%;
-  height: 450px;
-  z-index: 1;
-}
-
-.featues-left .features-content {
-  z-index: 2;
+  height: 100%;
+  background: rgb(25, 21, 56);
+  opacity: .7;
+  z-index: 0;
 }
 
 .features-right {
@@ -266,8 +271,32 @@ header .showcase .showcase-second .showcase-btn {
   position: relative;
 }
 
-.features-left div {
-  z-index: 5px;
+.features-right::after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(19, 7, 19);
+  opacity: .7;
+  z-index: 0;
+}
+.features-right>*{
+  position: relative;
+  z-index: 100;
+}
+
+.features-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.btn-feature{
+  margin-top: 0.8rem;
 }
 
 /* Clients */
