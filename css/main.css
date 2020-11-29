@@ -123,10 +123,15 @@ header ul li {
   margin-left: 10px;
   line-height: 50px;
 }
-header ul li .btn:hover {
-  border: 1px solid white;
-  color: #ffffff;
-  border-radius: 0.2rem;
+
+header ul li .btn,
+header .showcase .showcase-second .showcase-btn {
+  transform: scale(1);
+  transition: transform 250ms ease-in-out;
+}
+header ul li .btn:hover,
+header .showcase .showcase-second .showcase-btn:hover {
+  transform: scale(.85);
 }
 
 /* Showcase*/
@@ -198,23 +203,38 @@ header .showcase .showcase-second .showcase-btn {
 
 .procedures .procedures-main-box {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   margin: 3rem 0 0 0;
 }
 
-.procedures .procedures-main-left {
-  display: flex;
-  align-items: center;
-  border-right: solid 2px gray;
-  margin-right: 3rem;
+
+
+
+.procedures ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 2;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
 }
 
-.procedures .procedures-main-box ul li a {
+.procedures ul li a {
   color: gray;
-  font-size: 1.3rem;
-  font-weight: 500;
-  line-height: 35px;
+  cursor: pointer;
+  transform: scale(.75);
+  transition: 250ms ease-in-out;
 }
+
+.procedures ul li a:hover,
+  .procedures ul li a:focus{
+    transform: scale(1);
+    color: blue;
+    font-size: 1.1rem;
+    border-bottom: blueviolet 1px solid;
+    padding-bottom: 0.5rem;
+}
+
 
 .procedures .procedures-main-middle {
   padding-right: 1.5rem;
@@ -497,6 +517,10 @@ h1{
 .procedures .procedures-main-box{
   display: grid;
   grid-template-columns: 1fr;
+  }
 }
-}
+
+
+
+
 
